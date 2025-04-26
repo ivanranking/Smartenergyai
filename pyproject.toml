@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "SmartEnergyAI"  
+version = "0.1.0"
+description = "an AI that predicts energy consuption" 
+authors = ["orisa ivan and ainamaani gracious <ivanranking055@gmail.com>"] 
+license = "MIT" 
+readme = "README.md" # If you have a README file
+
+[tool.poetry.dependencies]
+python = "^3.11"  
+flask = "^2.3.2"   # Or your Flask version
+gunicorn = "^20.1.0"  # Or your preferred Gunicorn version
+
+[tool.poetry.group.dev.dependencies]
+# Add development dependencies here, like testing frameworks (e.g., pytest)
+# pytest = "^7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
