@@ -86,7 +86,7 @@ def home():
             predictions = y_pred.flatten().tolist()
             predictions_text = "\n".join([f"{p:.2f}" for p in predictions])
 
-    return render_template('home.html', features=features_list, predictions_text=predictions_text)
+    return render_template('index.html', features=features_list, predictions_text=predictions_text)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000, debug=True)
